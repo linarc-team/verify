@@ -1,0 +1,15 @@
+{
+  "name": "discord-verification-site",
+  "version": "1.0.0",
+  "description": "Site de verificação do Discord",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "discord.js": "^14.14.1",
+    "cors": "^2.8.5"
+  }
+}
+
