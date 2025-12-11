@@ -216,13 +216,6 @@ app.post('/api/request-verification', async (req, res) => {
         captchaTokens.delete(captchaToken);
 
         // Validar bot check
-        if (!botCheckToken || !fingerprint) {
-            return res.status(400).json({ error: 'Verificação de navegador necessária' });
-        }
-
-        if (!validateBotCheck(botCheckToken, fingerprint)) {
-            return res.status(400).json({ error: 'Verificação de navegador inválida' });
-        }
 
         // Gerar código
         const code = generateCode();
